@@ -8,14 +8,15 @@ public class Application {
 		
 		Scanner sc = new Scanner(System.in);
 		CharacterManager characterManager = new CharacterManager();
-		GameManager gamePlayManger = new GameManager();
+		GameManager gameManger = new GameManager();
 		
-		boolean bool = true;
-		while(bool) {
+		while(true) {
+			System.out.println();
 			System.out.println("==========카드 게임============");
 			System.out.println("1. FirstCharacter");
 			System.out.println("2. SecondCharacter");
-			System.out.println("8. 게임시작");
+			System.out.println("3. 두장의 카드를 받으세요");
+			System.out.println("5. 결과를 확인하세요");
 			System.out.println("9. 게임종료");
 			System.out.println("번호를 입력하세요 : ");
 			
@@ -23,19 +24,18 @@ public class Application {
 			
 			switch(no) {
 			case 1 :
+//				choiceCharacter();
 				characterManager.inputCharacterInfom1();
 				characterManager.printCharacter1();
-				bool = false;
 				break;
 			case 2 :
 				characterManager.inputCharacterInfom2();
 				characterManager.printCharacter2();
-				bool = false;
 				break;
-			case 8 :
-				gamePlayManger.CardPlay();
-				bool = false;
+			case 3 :
+				gameManger.CardPlay();
 				break;
+			case 5 :
 			case 9 :
 				System.out.println("게임종료합니다.");
 				return;
@@ -44,5 +44,8 @@ public class Application {
 				break;
 			}
 		}
+		
+//		private int choiceCharactor() {
+//			}
 	}
 }

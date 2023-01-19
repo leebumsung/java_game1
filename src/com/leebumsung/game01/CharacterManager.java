@@ -26,10 +26,10 @@ public class CharacterManager {
 		CharacterDTO[] listCharacter1 = new CharacterListManager().listCharacter1();
 		System.out.println("선택하신 케릭터 정보 \n-----------------" + listCharacter1[0]);
 	}
-	
+
 	public void printCharacter2() {
 		CharacterDTO[] listCharacter2 = new CharacterListManager().listCharacter2();
-		System.out.println(" 선택하신 케릭터 정보 \n-----------------\"" + listCharacter2[0]);
+		System.out.println(" 선택하신 케릭터 정보 \n-----------------" + listCharacter2[0]);
 	}
 }
 
