@@ -5,14 +5,16 @@ public class CharacterDTO {
 	private int characterNum;
 	private String characterName;
 	private char gender;
+	private int level;
 	
 	public CharacterDTO() {}
 
-	public CharacterDTO(int characterNum, String characterName, char gender) {
+	public CharacterDTO(int characterNum, String characterName, char gender, int level) {
 		super();
 		this.characterNum = characterNum;
 		this.characterName = characterName;
 		this.gender = gender;
+		this.level = level;
 	}
 
 	public int getCharacterNum() {
@@ -39,8 +41,19 @@ public class CharacterDTO {
 		this.gender = gender;
 	}
 
+	public int getLevel() {
+		return level;
+	}
+
+	public void setLevel(int level) {
+		this.level = level;
+	}
+
 	@Override
 	public String toString() {
-		return "\n 케릭터번호: " + characterNum + "번\n 이    름: " + characterName + " \n 성    별: " + gender;
+		return "\n 케릭터번호: " + characterNum 
+			 + "번\n 이    름: " + characterName 
+			 + " \n 성    별: " + gender
+			 + " \n 레    밸: " + level;
 	}
 }

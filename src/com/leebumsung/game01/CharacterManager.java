@@ -6,7 +6,7 @@ public class CharacterManager {
 		
 		CharacterDTO[] character = new CharacterDTO[1];
 		
-		character[0] = new CharacterDTO(1, "niceGuy", '남');
+		character[0] = new CharacterDTO(1, "niceGuy", '남', 10);
 		
 		CharacterInsertInfo gamerInsertInfo = new CharacterInsertInfo();
 		gamerInsertInfo.insert(character);	
@@ -16,7 +16,7 @@ public class CharacterManager {
 		
 		CharacterDTO[] characters = new CharacterDTO[1];
 	
-		characters[0] = new CharacterDTO(2, "wonderWomen", '여');
+		characters[0] = new CharacterDTO(2, "wonderWomen", '여', 10);
 		
 		CharacterInsertInfo characterInsertInfo = new CharacterInsertInfo();
 		characterInsertInfo.insert(characters);

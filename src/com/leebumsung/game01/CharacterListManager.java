@@ -5,14 +5,14 @@ public class CharacterListManager {
 	public CharacterDTO[] listCharacter1() {
 		
 		return new CharacterDTO[] {
-			new CharacterDTO(1, "niceGuy", '남'),
+			new CharacterDTO(1, "niceGuy", '남', 10)
 		};
 	}
 
 	public CharacterDTO[] listCharacter2() {
 		
 		return new CharacterDTO[] {
-			new CharacterDTO(2, "wonderWomen", '여')
+			new CharacterDTO(2, "wonderWomen", '여', 10)
 		};
 	}
 }

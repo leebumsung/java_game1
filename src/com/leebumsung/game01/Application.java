@@ -15,8 +15,8 @@ public class Application {
 			System.out.println("==========카드 게임============");
 			System.out.println("1. FirstCharacter");
 			System.out.println("2. SecondCharacter");
-			System.out.println("3. 1번째 케릭터 두장의 카드를 받으세요");
-			System.out.println("4. 2번째 케릭터 두장의 카드를 받으세요");
+			System.out.println("3. 첫번째 케릭터의 카드 2장을 받으세요");
+			System.out.println("4. 두번째 케릭터의 카드 2장을 받으세요");
 			System.out.println("5. 결과를 확인하세요");
 			System.out.println("9. 게임종료");
 			System.out.println("번호를 입력하세요 : ");

@@ -2,14 +2,14 @@ package com.leebumsung.game01;
 
 public class SelectCard {
 
-	CompareCard cCard = new CompareCard();
+	CalculateCard cCard = new CalculateCard();
 	
 	String[] shapes = {"SPADE", "CLOVER", "HEART", "DIAMOND"};
 	String[] cardNumbers = {"ACE", "2", "3", "4", "5", "6", "7", "8", "9", "10", "JACK", "QUEEN", "KING"};
 	
-	public void selectCard1() {
+	public int selectCard1() {
 	int result1 = 0;
-	for(int i = 1; i <= 2; i++) {
+	for(int i = 0; i <= 1; i++) {
 		int shape = (int) (Math.random() * shapes.length);
 		int cardNum = (int) (Math.random() * cardNumbers.length);
 		
@@ -21,15 +21,15 @@ public class SelectCard {
 			if(cardNumbers[cardNum] == "ACE") {cardNumbers[cardNum] = cardNumbers[cardNum].replace("ACE", "1");}
 			result1 += Integer.parseInt(cardNumbers[cardNum]);
 			System.out.println("받은 카드합은 : " + result1 + " 입니다");
-			cCard.resultCard1(result1);
-			cCard.finalResult(result1, 0);
+//			cCard.resultCard1(result1);
+			
 			}
 		}
-	}
-	
-	int result2 = 0;
-	public void selectCard2() {
-		int result = 0;
+	return result1;
+	  
+	}	
+	public int selectCard2() {
+		int result2 = 0;
 		for(int i = 1; i <= 2; i++) {
 			int shape = (int) (Math.random() * shapes.length);
 			int cardNum = (int) (Math.random() * cardNumbers.length);
@@ -42,11 +42,11 @@ public class SelectCard {
 				if(cardNumbers[cardNum] == "ACE") {cardNumbers[cardNum] = cardNumbers[cardNum].replace("ACE", "1");}
 				result2 += Integer.parseInt(cardNumbers[cardNum]);
 				System.out.println("받은 카드합은 : " + result2 + " 입니다");
-				cCard.resultCard2(result2);
-				cCard.finalResult(0, result2);
+				
+//				cCard.resultCard2(result2);
 				}
 			}
+		return result2;
 		}
-	
 }
 
