@@ -1,8 +1,6 @@
 package com.leebumsung.game01;
 
 public class SelectCard {
-
-	CalculateCard cCard = new CalculateCard();
 	
 	String[] shapes = {"SPADE", "CLOVER", "HEART", "DIAMOND"};
 	String[] cardNumbers = {"ACE", "2", "3", "4", "5", "6", "7", "8", "9", "10", "JACK", "QUEEN", "KING"};
