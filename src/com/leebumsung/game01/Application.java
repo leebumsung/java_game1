@@ -12,12 +12,10 @@ public class Application {
 		
 		while(true) {
 			System.out.println();
-			System.out.println("==========카드 게임============");
+			System.out.println("==========카드 게임===========");
 			System.out.println("1. FirstCharacter");
 			System.out.println("2. SecondCharacter");
-			System.out.println("3. 첫번째 케릭터의 카드 2장을 받으세요");
-			System.out.println("4. 두번째 케릭터의 카드 2장을 받으세요");
-			System.out.println("5. 결과를 확인하세요");
+			System.out.println("3. play game !");
 			System.out.println("9. 게임종료");
 			System.out.println("번호를 입력하세요 : ");
 			
@@ -34,12 +32,6 @@ public class Application {
 				characterManager.printCharacter2();
 				break;
 			case 3 :
-				gameManger.CardPlay1();
-				break;
-			case 4 :
-				gameManger.CardPlay2();
-				break;
-			case 5 :
 				gameManger.result();
 				break;
 			case 9 :

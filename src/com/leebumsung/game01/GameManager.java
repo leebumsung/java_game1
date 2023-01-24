@@ -3,28 +3,25 @@ package com.leebumsung.game01;
 public class GameManager {
 
 	SelectCard sCard = new SelectCard();
-	CalculateCard calcCard = new CalculateCard();
-	
-	public void CardPlay1() {
-		
-		sCard.selectCard1();
-	}
-	
-	public void CardPlay2() {
-		
-		sCard.selectCard2();
-	}
-	
 	
 	public void result() {
+		System.out.println("--------------------------------");
 		int fc1 = sCard.selectCard1();
+		System.out.println("--------------------------------");
 		int fc2 = sCard.selectCard2();
-		if(fc1 > fc2) {
+		System.out.println("--------------------------------");
+		if((fc1 % 10) > (fc2 % 10)) {
+			System.out.println("======게임 결과=====");
 			System.out.println("1번 케릭터 win");
-		} else if (fc1 < fc2) {
+			System.out.println("----------------");
+		} else if ((fc1 % 10) < (fc2 % 10)) {
+			System.out.println("======게임 결과=====");
 			System.out.println("2번 케릭터 win");
-		} else if (fc1 == fc2) {
-			System.out.println("동정입니다.");
+			System.out.println("----------------");
+		} else if ((fc1 % 10) == (fc2 % 10)) {
+			System.out.println("======게임 결과=====");
+			System.out.println("동점입니다.");
+			System.out.println("-----------------");
 		} else;
 	}
 }
