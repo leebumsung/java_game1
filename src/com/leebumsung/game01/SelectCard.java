@@ -7,7 +7,7 @@ public class SelectCard {
 	
 	public int selectCard1() {
 	int result1 = 0;
-	for(int i = 0; i <= 1; i++) {
+	for(int i = 1; i <= 2; i++) {
 		int shape = (int) (Math.random() * shapes.length);
 		int cardNum = (int) (Math.random() * cardNumbers.length);
 		
@@ -15,10 +15,10 @@ public class SelectCard {
 			i -= i;
 			continue;}
 		else {
-			System.out.println("1번케릭터가 받은카드는 " + shapes[shape] + ", " + cardNumbers[cardNum] + " 입니다.");
+			System.out.println("첫번째 케릭터가 받은카드는 " + shapes[shape] + ", " + cardNumbers[cardNum] + " 입니다.");
 			if(cardNumbers[cardNum] == "ACE") {cardNumbers[cardNum] = cardNumbers[cardNum].replace("ACE", "1");}
 			result1 += Integer.parseInt(cardNumbers[cardNum]);
-			System.out.println("1번케릭터가 받은 카드합은 : " + result1 + " 입니다");
+			System.out.println("첫번째 케릭터가 받은 카드합은 : " + result1 + " 입니다");
 			}
 		}
 	return result1;
@@ -34,10 +34,10 @@ public class SelectCard {
 				i -= i;
 				continue;}
 			else {
-				System.out.println("2번케릭터가 받은카드는 " + shapes[shape] + ", " + cardNumbers[cardNum] + " 입니다.");
+				System.out.println("두번째 케릭터가 받은카드는 " + shapes[shape] + ", " + cardNumbers[cardNum] + " 입니다.");
 				if(cardNumbers[cardNum] == "ACE") {cardNumbers[cardNum] = cardNumbers[cardNum].replace("ACE", "1");}
 				result2 += Integer.parseInt(cardNumbers[cardNum]);
-				System.out.println("2번케릭터가 받은 카드합은 : " + result2 + " 입니다");
+				System.out.println("두번째 케릭터가 받은 카드합은 : " + result2 + " 입니다");
 				}
 			}
 		return result2;
